@@ -1,0 +1,15 @@
+#yml是树形结构 切记不能用table缩进
+#peizhi duankou
+server:
+ # port: 9090 
+
+#suiji duankou
+  port: ${random.int[1024,9999]}
+
+#zidingyi shuxing peizhi
+tanhuang:
+  msg: hi,hello world! ${tanhuang.hello}${tanhuang.number}
+  hello: hi,tanhuang! 
+
+#suijibianliang
+  number: ${random.int}
